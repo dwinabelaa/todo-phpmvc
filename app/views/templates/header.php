@@ -13,7 +13,6 @@
 
 <body>
     <div class="container">
-
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
                 <a class="navbar-brand">Navbar</a>
@@ -28,12 +27,12 @@
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Features</a>
+                            <a class="nav-link" href="#">Todo</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Pricing</a>
+                            <a class="nav-link" href="#">About</a>
                         </li>
-                        <li class="nav-item dropdown">
+                        <!-- <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
                                 Dropdown link
@@ -43,13 +42,47 @@
                                 <li><a class="dropdown-item" href="#">Another action</a></li>
                                 <li><a class="dropdown-item" href="#">Something else here</a></li>
                             </ul>
-                        </li>
+                        </li> -->
                     </ul>
                 </div>
             </div>
         </nav>
 
+        <div class="">
+            <h3>TODO Aktif</h3>
+                <ol class="list-group list-group-numbered">
+        
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+            <div class="fw-bold">Subheading</div>
+            Content for list item
+            </div>
+            <span class="badge bg-success rounded-pill">Aktif</span>
+        </li>
+        </ol>
+        </div>
 
+
+    <div class="">
+        <h3>TODO Selesai</h3>
+        <ol class="list-group list-group-numbered">
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+            <del class="fw-bold">Subheading</del>
+            </div>
+            <span class="badge bg-danger rounded-pill">Selesai</span>
+        </li>
+        </ol>
+    </div>
+
+
+        <div class="dropup position-absolute bottom-0 end-0 rounded-circle m-5">
+            <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="dropdown" aria-expanded="false"
+                aria-haspopup="true">
+                <!-- <i class="fa-solid fa-plus"></i> -->
+                <span class="">Tambah TODO</span>
+            </button>
+        </div>
 
 
     </div>
