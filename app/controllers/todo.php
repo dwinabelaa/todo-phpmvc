@@ -35,4 +35,24 @@ class Todo extends Controller
             exit;
         }
     }
+
+    // nambahin fungsi buat detail, ini fungsinya baut nampilin halaman detail
+    public function detail($id)
+    {
+        $data['title'] = 'Detail TODO';
+        // $data['todo'] = $this->model('Todo_model')->ambilDataById($id);
+        $this->view('templates/header', $data);
+        $this->view('todo/detail', $data);
+        $this->view('templates/footer');
+    }
+
+    // nambahin fungsi buat edit, ini fungsinya buat nampilin halaman edit dan diisi sama data yang udah ada
+    public function edit($id)
+    {
+        $data['title'] = 'Edit TODO';
+        // $data['todo'] = $this->model('Todo_model')->ambilDataById($id);
+        $this->view('templates/header', $data);
+        $this->view('todo/edit', $data);
+        $this->view('templates/footer');
+    }
 }

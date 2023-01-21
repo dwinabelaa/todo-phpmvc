@@ -40,12 +40,10 @@ class Todo_model
 
     public function tambahTodo($data)
     {
-        $query = 'INSERT INTO todo VALUES ("", :judul, :deskripsi, "")';
-
+        $query = 'INSERT INTO '. $this->table .' VALUES (NULL, :title, :deskripsi, "0")';
         $this->db->query($query);
-        $this->db->bind('judul', $data['judul']);
+        $this->db->bind('title', $data['judul']);
         $this->db->bind('deskripsi', $data['deskripsi']);
-
         $this->db->execute();
 
         return $this->db->rowCount();

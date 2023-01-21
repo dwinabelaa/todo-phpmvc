@@ -1,6 +1,6 @@
 <?php
 
-define('BASEURL', 'http://localhost:8080/todo-phpmvc/public');
+define('BASEURL', 'http://localhost/todo-phpmvc/public');
 
 define('DB_HOST', 'localhost');
 define('DB_USER', 'root');
