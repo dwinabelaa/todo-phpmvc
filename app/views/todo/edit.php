@@ -3,7 +3,7 @@
     <div class="card">
         <h5 class="card-header"><?= $data['title'] ?></h5>
         <div class="card-body">
-            <form action="" method="post">
+            <form action="<?= BASEURL ?>/todo/update" method="post">
                 <div class="form-floating mb-3">
                     <input type="text" value="ini isi text, nanti diambil dari database" class="form-control" id="floatingInput" placeholder="name@example.com">
                     <label for="floatingInput">Judul</label>

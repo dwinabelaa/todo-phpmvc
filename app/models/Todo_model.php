@@ -60,4 +60,13 @@ class Todo_model
 
         return $this->db->rowCount();
     }
+
+    public function updateTodo()
+    {
+        // TUGAS BELA:
+        // BIKIN LOGIKA BUAT UPDATE, SYNTAX SQL-NYA KURANG LEBIH SAMA KAYAK FUNGSI selesaiToDO()
+        // YANG MEMBEDAKAN NANTI YANG DI UPDATE BUKAN STATUS TAPI JUDUL DAN DESKRIPSI
+
+        
+    }
 }

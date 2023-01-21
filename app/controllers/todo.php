@@ -36,6 +36,13 @@ class Todo extends Controller
         }
     }
 
+    public function update(){
+        if ($this->model('Todo_model')->updateTodo($_POST) > 0) {
+            header('Location: ' . BASEURL . '/todo');
+            exit;
+        }
+    }
+
     // nambahin fungsi buat detail, ini fungsinya baut nampilin halaman detail
     public function detail($id)
     {
