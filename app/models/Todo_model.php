@@ -40,12 +40,10 @@ class Todo_model
 
     public function tambahTodo($data)
     {
-        $query = 'INSERT INTO todo VALUES ("", :judul, :deskripsi, "")';
-
+        $query = 'INSERT INTO '. $this->table .' VALUES (NULL, :title, :deskripsi, "0")';
         $this->db->query($query);
-        $this->db->bind('judul', $data['judul']);
+        $this->db->bind('title', $data['judul']);
         $this->db->bind('deskripsi', $data['deskripsi']);
-
         $this->db->execute();
 
         return $this->db->rowCount();
@@ -61,5 +59,14 @@ class Todo_model
         $this->db->execute();
 
         return $this->db->rowCount();
+    }
+
+    public function updateTodo()
+    {
+        // TUGAS BELA:
+        // BIKIN LOGIKA BUAT UPDATE, SYNTAX SQL-NYA KURANG LEBIH SAMA KAYAK FUNGSI selesaiToDO()
+        // YANG MEMBEDAKAN NANTI YANG DI UPDATE BUKAN STATUS TAPI JUDUL DAN DESKRIPSI
+
+        
     }
 }
