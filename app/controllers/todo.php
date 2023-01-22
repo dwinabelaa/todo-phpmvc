@@ -36,7 +36,8 @@ class Todo extends Controller
         }
     }
 
-    public function update(){
+    public function update()
+    {
         if ($this->model('Todo_model')->updateTodo($_POST) > 0) {
             header('Location: ' . BASEURL . '/todo');
             exit;
@@ -47,7 +48,7 @@ class Todo extends Controller
     public function detail($id)
     {
         $data['title'] = 'Detail TODO';
-        // $data['todo'] = $this->model('Todo_model')->ambilDataById($id);
+        $data['todo'] = $this->model('Todo_model')->ambilDataById($id);
         $this->view('templates/header', $data);
         $this->view('todo/detail', $data);
         $this->view('templates/footer');
@@ -57,9 +58,17 @@ class Todo extends Controller
     public function edit($id)
     {
         $data['title'] = 'Edit TODO';
-        // $data['todo'] = $this->model('Todo_model')->ambilDataById($id);
+        $data['todo'] = $this->model('Todo_model')->ambilDataById($id);
         $this->view('templates/header', $data);
         $this->view('todo/edit', $data);
         $this->view('templates/footer');
+    }
+
+    public function ubah()
+    {
+        if ($this->model('Todo_model')->updateTodo($_POST)) {
+            header('Location' . BASEURL . '/todo');
+            exit;
+        }
     }
 }
