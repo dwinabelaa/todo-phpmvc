@@ -1,6 +1,6 @@
-<div class="container mt-3">
+<div class="container mt-3 ">
     <h3>TODO Aktif</h3>
-    <ol class="list-group list-group-numbered">
+    <ol class="list-group list-group-numbered ">
         <?php foreach ($data['to_do_belum'] as $todo) : ?>
             <li class="list-group-item d-flex justify-content-between align-items-start gap-1">
                 <div class="ms-2 me-auto">
@@ -52,7 +52,7 @@
 
 <!-- Button trigger modal -->
 <div class="dropup position-absolute bottom-0 end-0 rounded-circle m-5">
-    <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" aria-expanded="false" aria-haspopup="true" data-bs-target="#tambahtodo">
+    <button type="button" class="btn btn-primary btn-lg " data-bs-toggle="modal" aria-expanded="false" aria-haspopup="true" data-bs-target="#tambahtodo">
         Tambah TODO
     </button>
 </div>

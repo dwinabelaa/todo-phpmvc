@@ -1,9 +1,9 @@
-<div class="container mt-3">
+<div class="container mt-3" style="width: 50rem;">
     <div class="card">
         <h5 class="card-header"><?= $data['title'] ?></h5>
         <div class="card-body">
             <form action="<?= BASEURL; ?>/todo/ubah/" method="post">
-                <input type="number" value="<?= $data['todo']['id'] ?>" name="input">
+                <input type="number" value="<?= $data['todo']['id'] ?>" name="input" hidden>
                 <div class="form-floating mb-3">
                     <input type="text" value="<?= $data['todo']['judul'] ?>" class="form-control" id="floatingInput" placeholder="judul" name="judul">
                     <label for="floatingInput">Judul</label>

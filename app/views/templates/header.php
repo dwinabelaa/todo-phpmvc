@@ -11,10 +11,10 @@
 </head>
 
 <body>
-    <div class="container">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container bg-success-subtle " style="height: 100vh;">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary rounded-3 ">
             <div class="container-fluid">
-                <a class="navbar-brand">Navbar</a>
+                <a class="navbar-brand"><img src="<?= BASEURL; ?>/img/icon.png" alt="Navbar" width="50" class="rounded-5"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>

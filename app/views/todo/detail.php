@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container mt-3">
   <div class="card mx-auto" style="width: 50rem;">
     <h5 class="card-header"><?= $data['title'] ?></h5>
     <div class="card-body">

@@ -67,7 +67,7 @@ class Todo extends Controller
     public function ubah()
     {
         if ($this->model('Todo_model')->updateTodo($_POST)) {
-            header('Location' . BASEURL . '/todo');
+            header('Location: ' . BASEURL . '/todo');
             exit;
         }
     }

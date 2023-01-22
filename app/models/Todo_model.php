@@ -69,7 +69,7 @@ class Todo_model
 
         $query = "UPDATE todo SET 
                     judul = :judul,
-                    deskripsi = :deskripsi,
+                    deskripsi = :deskripsi
                     WHERE id = :id";
 
         $this->db->query($query);
